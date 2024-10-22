@@ -8,10 +8,9 @@
 import UIKit
 
 class HamsikViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    
-    // 정적 뷰
-    
+
     //동적 뷰
+    @IBOutlet weak var hamsikDescription: UILabel!
     @IBOutlet weak var hamsikImage: UIImageView!
     @IBOutlet weak var hamsikName: UILabel!
     @IBOutlet weak var hamsikMBTI: UILabel!
@@ -33,8 +32,10 @@ class HamsikViewController: UIViewController, UITableViewDelegate, UITableViewDa
     override func viewDidLoad() {
         
         super.viewDidLoad()
+        hamsikImage.image = UIImage(named: hamsikInfo.profileImage)
         hamsikName.text = hamsikInfo.name
         hamsikMBTI.text = hamsikInfo.mbti
+        hamsikDescription.text = hamsikInfo.description
         
         // 각 테이블뷰의 델리게이트와 데이터소스 초기화
         strengthsTableView.delegate = self
