@@ -24,7 +24,7 @@ class HamsikViewController: UIViewController, UITableViewDelegate, UITableViewDa
                                             description: "혼자서 만들기보다는 다같이 만드는 것을 좋아하는 개발자 지망생입니다!",
                                             mbti: "ENFJ",
                                             strengths: ["긍정적이에요!", "대화하는 것을 좋아합니다!", "체력이 좋아요!"],
-                                            style: ["계획적입니다!", "깔끔한 것을 좋아해요!"],
+                                            style: ["계획적입니다!", "깔끔한 것을 좋아해요!", "신속한 것을 좋아해요!"],
                                             cooperation: ["리뷰를 좋아해요!", "실험적인 것을 좋아해요!", "소통 자체를 좋아합니다!"],
                                             blogURL: "https://somehdd.tistory.com/",
                                             profileImage: "HSHPF",
