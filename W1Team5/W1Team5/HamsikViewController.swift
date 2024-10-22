@@ -6,9 +6,10 @@
 //
 
 import UIKit
+import SafariServices
 
 class HamsikViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-
+    
     //동적 뷰
     @IBOutlet weak var hamsikDescription: UILabel!
     @IBOutlet weak var hamsikImage: UIImageView!
@@ -17,7 +18,9 @@ class HamsikViewController: UIViewController, UITableViewDelegate, UITableViewDa
     @IBOutlet weak var strengthsTableView: UITableView!
     @IBOutlet weak var styleTableView: UITableView!
     @IBOutlet weak var cooperationTableView: UITableView!
-
+    @IBOutlet weak var goBlogButton: UIButton!
+    
+    
     // MARK: 데이터 초기화
     let hamsikInfo: HamsikInfo = HamsikInfo(name: "황석현",
                                             description: "혼자서 만들기보다는 다같이 만드는 것을 좋아하는 개발자 지망생입니다!",
@@ -81,7 +84,12 @@ class HamsikViewController: UIViewController, UITableViewDelegate, UITableViewDa
         }
         return cell
     }
-
+    
+    @IBAction func goBlogButtonTapped(_ sender: Any) {
+        guard let blogUrl = URL(string: hamsikInfo.blogURL) else { return  }
+        let blogSafariView: SFSafariViewController = SFSafariViewController(url: blogUrl)
+        self.present(blogSafariView, animated: true, completion: nil)
+    }
 }
 
 // MARK: 회의에서 정한 데이터 구조

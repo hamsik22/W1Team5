@@ -41,10 +41,10 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MBTI" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ufb-V6-BZq">
-                                                <rect key="frame" x="178" y="96" width="200" height="50"/>
+                                                <rect key="frame" x="175" y="96" width="100" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="vQm-B1-JMU"/>
-                                                    <constraint firstAttribute="width" constant="200" id="wuz-zM-gUm"/>
+                                                    <constraint firstAttribute="width" constant="100" id="wuz-zM-gUm"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                                 <nil key="textColor"/>
@@ -140,20 +140,34 @@
                                                     </tableViewCell>
                                                 </prototypes>
                                             </tableView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vXo-pe-HUl">
+                                                <rect key="frame" x="295" y="104" width="75" height="35"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="35" id="LsQ-Eo-KNJ"/>
+                                                    <constraint firstAttribute="width" constant="75" id="eTu-aJ-1aK"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="블로그"/>
+                                                <connections>
+                                                    <action selector="goBlogButtonTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="iZH-YU-g5m"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstItem="OMb-pD-fyj" firstAttribute="top" secondItem="XWR-sI-C5F" secondAttribute="bottom" constant="18" id="53M-Pc-bcJ"/>
+                                            <constraint firstItem="Ufb-V6-BZq" firstAttribute="leading" secondItem="IUW-7b-eJe" secondAttribute="trailing" constant="20" id="5AP-W2-frK"/>
                                             <constraint firstAttribute="height" constant="1000" id="6vP-tJ-tsr"/>
                                             <constraint firstItem="XWR-sI-C5F" firstAttribute="top" secondItem="P2O-Li-KCO" secondAttribute="bottom" constant="10" id="9Jp-4O-Xn8"/>
                                             <constraint firstItem="P2O-Li-KCO" firstAttribute="top" secondItem="0ZD-bO-pUR" secondAttribute="bottom" constant="20" id="DMX-u5-ris"/>
                                             <constraint firstItem="IUW-7b-eJe" firstAttribute="top" secondItem="pfr-96-6ft" secondAttribute="top" constant="15" id="DiH-8I-fq0"/>
+                                            <constraint firstItem="vXo-pe-HUl" firstAttribute="top" secondItem="jt8-xj-GXw" secondAttribute="bottom" constant="38" id="J0L-zt-s63"/>
+                                            <constraint firstItem="vXo-pe-HUl" firstAttribute="leading" secondItem="Ufb-V6-BZq" secondAttribute="trailing" constant="20" id="JTX-DA-OjH"/>
                                             <constraint firstAttribute="trailing" secondItem="jt8-xj-GXw" secondAttribute="trailing" constant="15" id="TBD-fu-hmO"/>
                                             <constraint firstItem="FZ2-5W-EVg" firstAttribute="top" secondItem="5OQ-IS-PzY" secondAttribute="bottom" constant="20" id="azD-Pm-YCr"/>
                                             <constraint firstItem="OMb-pD-fyj" firstAttribute="leading" secondItem="pfr-96-6ft" secondAttribute="leading" constant="20" id="dH5-8z-D73"/>
                                             <constraint firstItem="5OQ-IS-PzY" firstAttribute="leading" secondItem="pfr-96-6ft" secondAttribute="leading" constant="10" id="dgp-h0-aD4"/>
                                             <constraint firstItem="Ufb-V6-BZq" firstAttribute="top" secondItem="jt8-xj-GXw" secondAttribute="bottom" constant="30" id="eJi-I5-PEB"/>
-                                            <constraint firstAttribute="trailing" secondItem="Ufb-V6-BZq" secondAttribute="trailing" constant="15" id="emE-MG-rf3"/>
                                             <constraint firstItem="P2O-Li-KCO" firstAttribute="leading" secondItem="pfr-96-6ft" secondAttribute="leading" constant="20" id="en3-sP-6vU"/>
                                             <constraint firstItem="FZ2-5W-EVg" firstAttribute="leading" secondItem="pfr-96-6ft" secondAttribute="leading" constant="20" id="iZt-3W-Y2W"/>
                                             <constraint firstItem="0ZD-bO-pUR" firstAttribute="top" secondItem="FZ2-5W-EVg" secondAttribute="bottom" constant="10" id="meC-hH-hxz"/>
@@ -189,6 +203,7 @@
                     </view>
                     <connections>
                         <outlet property="cooperationTableView" destination="HnJ-qe-Nbc" id="4F4-BI-m1P"/>
+                        <outlet property="goBlogButton" destination="vXo-pe-HUl" id="tnU-4Y-qJ6"/>
                         <outlet property="hamsikDescription" destination="5OQ-IS-PzY" id="CEN-xl-ZSi"/>
                         <outlet property="hamsikImage" destination="IUW-7b-eJe" id="JxZ-lG-AZe"/>
                         <outlet property="hamsikMBTI" destination="Ufb-V6-BZq" id="PnJ-ad-mTC"/>
