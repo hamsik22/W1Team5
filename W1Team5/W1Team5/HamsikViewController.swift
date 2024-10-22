@@ -9,15 +9,17 @@ import UIKit
 
 class HamsikViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
+    // 정적 뷰
     
+    //동적 뷰
     @IBOutlet weak var hamsikImage: UIImageView!
     @IBOutlet weak var hamsikName: UILabel!
     @IBOutlet weak var hamsikMBTI: UILabel!
-    
     @IBOutlet weak var strengthsTableView: UITableView!
     @IBOutlet weak var styleTableView: UITableView!
     @IBOutlet weak var cooperationTableView: UITableView!
 
+    // MARK: 데이터 초기화
     let hamsikInfo: HamsikInfo = HamsikInfo(name: "황석현",
                                             description: "혼자서 만들기보다는 다같이 만드는 것을 좋아하는 개발자 지망생입니다!",
                                             mbti: "ENFJ",
@@ -33,6 +35,8 @@ class HamsikViewController: UIViewController, UITableViewDelegate, UITableViewDa
         super.viewDidLoad()
         hamsikName.text = hamsikInfo.name
         hamsikMBTI.text = hamsikInfo.mbti
+        
+        // 각 테이블뷰의 델리게이트와 데이터소스 초기화
         strengthsTableView.delegate = self
         strengthsTableView.dataSource = self
         styleTableView.delegate = self
@@ -40,12 +44,14 @@ class HamsikViewController: UIViewController, UITableViewDelegate, UITableViewDa
         cooperationTableView.delegate = self
         cooperationTableView.dataSource = self
         
+        // Cell 식별자 등록
         strengthsTableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
         styleTableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
         cooperationTableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        // 입력받은 뷰 이름의 데이터 갯수만큼 cell 생성
         switch tableView {
         case strengthsTableView:
             return hamsikInfo.strengths.count
@@ -61,6 +67,7 @@ class HamsikViewController: UIViewController, UITableViewDelegate, UITableViewDa
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         
+        // 입력받은 뷰 이름의 데이터를 indexPath 순서대로 표시
         switch tableView {
         case strengthsTableView:
             cell.textLabel?.text = hamsikInfo.strengths[indexPath.row]
@@ -76,6 +83,7 @@ class HamsikViewController: UIViewController, UITableViewDelegate, UITableViewDa
 
 }
 
+// MARK: 회의에서 정한 데이터 구조
 struct HamsikInfo {
     let name: String
     let description: String
