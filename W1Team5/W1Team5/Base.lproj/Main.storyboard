@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="beQ-TF-ay8">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -12,16 +13,17 @@
         <scene sceneID="xUT-ie-mgg">
             <objects>
                 <navigationController id="beQ-TF-ay8" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="kgI-hS-W6Y">
+                    <navigationBar key="navigationBar" contentMode="bottom" id="kgI-hS-W6Y">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textAttributes key="titleTextAttributes">
-                            <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
-                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <offsetWrapper key="textShadowOffset" horizontal="0.0" vertical="0.0"/>
                         </textAttributes>
                     </navigationBar>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="oNS-85-Kyh"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="GRG-kS-bBl"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C8c-k2-Tve" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -31,17 +33,11 @@
         <!--Team Main View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="TeamMainViewController" customModule="TeamMainView" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="TeamMainViewController" customModule="W1Team5" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="팀인데5를곁들인" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RTo-a9-BhL">
-                                <rect key="frame" x="30" y="103" width="333" height="42"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="fks-U1-aLp">
                                 <rect key="frame" x="31.666666666666657" y="482" width="330" height="306"/>
                                 <subviews>
@@ -104,7 +100,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="zdC-pX-QQE" userLabel="Team Member 1-3">
                                                 <rect key="frame" x="260" y="0.0" width="70" height="93"/>
                                                 <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lXx-gM-aWx">
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lXx-gM-aWx" customClass="UIRoundableImageView" customModule="W1Team5" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
                                                         <color key="backgroundColor" systemColor="systemRedColor"/>
                                                         <constraints>
@@ -255,161 +251,68 @@
                                     <constraint firstItem="3ad-DQ-i22" firstAttribute="leading" secondItem="fks-U1-aLp" secondAttribute="leading" id="ebX-ay-Rfl"/>
                                 </constraints>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="PBb-aP-5PX" userLabel="팀 정보">
-                                <rect key="frame" x="30" y="155.00000000000003" width="333" height="300.66666666666674"/>
-                                <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="SJ1-Uk-OwJ" userLabel="팀 설명">
-                                        <rect key="frame" x="0.0" y="0.0" width="333" height="67.666666666666671"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="팀 설명 " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M2u-w1-eZG">
-                                                <rect key="frame" x="0.0" y="0.0" width="64.333333333333329" height="30"/>
-                                                <color key="backgroundColor" systemColor="systemYellowColor"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="30" id="dsi-2Q-fHj"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="21"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" scrollEnabled="NO" editable="NO" text="열정과다러들이 모였다." selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UhL-75-mb5">
-                                                <rect key="frame" x="0.0" y="29.999999999999996" width="333" height="37.666666666666657"/>
-                                                <color key="backgroundColor" systemColor="systemBrownColor"/>
-                                                <color key="textColor" systemColor="labelColor"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                            </textView>
-                                        </subviews>
-                                        <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="UhL-75-mb5" secondAttribute="trailing" id="AMa-Ce-b0Z"/>
-                                            <constraint firstItem="UhL-75-mb5" firstAttribute="leading" secondItem="SJ1-Uk-OwJ" secondAttribute="leading" id="Aom-Hk-rWQ"/>
-                                        </constraints>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="RDc-uB-3wf" userLabel="팀 특징">
-                                        <rect key="frame" x="0.0" y="77.666666666666657" width="333" height="67.666666666666657"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="팀 특징" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lzJ-xp-zzX">
-                                                <rect key="frame" x="0.0" y="0.0" width="59.333333333333336" height="30"/>
-                                                <color key="backgroundColor" systemColor="systemYellowColor"/>
-                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="21"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="No NoBase" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dNO-Jx-Lyo">
-                                                <rect key="frame" x="0.0" y="30.000000000000025" width="333" height="37.666666666666657"/>
-                                                <color key="backgroundColor" systemColor="systemBrownColor"/>
-                                                <color key="textColor" systemColor="labelColor"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                            </textView>
-                                        </subviews>
-                                        <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="dNO-Jx-Lyo" secondAttribute="trailing" id="BAj-si-wGR"/>
-                                            <constraint firstItem="dNO-Jx-Lyo" firstAttribute="leading" secondItem="RDc-uB-3wf" secondAttribute="leading" id="Oo6-fk-wTf"/>
-                                        </constraints>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="1gS-5u-zrW" userLabel="팀 약속">
-                                        <rect key="frame" x="0.0" y="155.33333333333331" width="333" height="67.666666666666686"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="팀 약속" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SPO-16-AwB">
-                                                <rect key="frame" x="0.0" y="0.0" width="59.333333333333336" height="30"/>
-                                                <color key="backgroundColor" systemColor="systemYellowColor"/>
-                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="21"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="마감시간 시키자" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q6w-7a-Nr7">
-                                                <rect key="frame" x="0.0" y="29.999999999999996" width="333" height="37.666666666666657"/>
-                                                <color key="backgroundColor" systemColor="systemBrownColor"/>
-                                                <color key="textColor" systemColor="labelColor"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                            </textView>
-                                        </subviews>
-                                        <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="q6w-7a-Nr7" secondAttribute="trailing" id="Ich-0e-0O6"/>
-                                            <constraint firstItem="q6w-7a-Nr7" firstAttribute="leading" secondItem="1gS-5u-zrW" secondAttribute="leading" id="WI6-3t-fTQ"/>
-                                        </constraints>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="o3P-Wo-G1f" userLabel="궁극적인 목표">
-                                        <rect key="frame" x="0.0" y="232.99999999999997" width="333" height="67.666666666666657"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="궁극적인 목표 " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rOW-oB-NYm">
-                                                <rect key="frame" x="0.0" y="0.0" width="118.66666666666667" height="30"/>
-                                                <color key="backgroundColor" systemColor="systemYellowColor"/>
-                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="21"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="악으로 깡으로 버티자" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e0u-3k-MEu">
-                                                <rect key="frame" x="0.0" y="29.999999999999996" width="333" height="37.666666666666657"/>
-                                                <color key="backgroundColor" systemColor="systemBrownColor"/>
-                                                <color key="textColor" systemColor="labelColor"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                            </textView>
-                                        </subviews>
-                                        <constraints>
-                                            <constraint firstItem="e0u-3k-MEu" firstAttribute="leading" secondItem="o3P-Wo-G1f" secondAttribute="leading" id="fOc-jl-nAY"/>
-                                            <constraint firstAttribute="trailing" secondItem="e0u-3k-MEu" secondAttribute="trailing" id="icA-W0-D0J"/>
-                                        </constraints>
-                                    </stackView>
-                                </subviews>
-                                <color key="backgroundColor" systemColor="systemPinkColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="팀인데5를곁들인" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lty-dz-5hd">
+                                <rect key="frame" x="20" y="118" width="353" height="42"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="jhV-ku-F36">
+                                <rect key="frame" x="60" y="180" width="273" height="100"/>
+                                <color key="backgroundColor" name="AccentColor"/>
                                 <constraints>
-                                    <constraint firstItem="SJ1-Uk-OwJ" firstAttribute="trailing" secondItem="RDc-uB-3wf" secondAttribute="trailing" id="2U2-rG-Ekm"/>
-                                    <constraint firstItem="1gS-5u-zrW" firstAttribute="trailing" secondItem="o3P-Wo-G1f" secondAttribute="trailing" id="7s6-JJ-zSe"/>
-                                    <constraint firstItem="rOW-oB-NYm" firstAttribute="height" secondItem="M2u-w1-eZG" secondAttribute="height" id="I4b-os-Dw9"/>
-                                    <constraint firstAttribute="trailing" secondItem="SJ1-Uk-OwJ" secondAttribute="trailing" id="Im2-D0-yuU"/>
-                                    <constraint firstItem="lzJ-xp-zzX" firstAttribute="height" secondItem="M2u-w1-eZG" secondAttribute="height" id="dAb-2x-ArB"/>
-                                    <constraint firstItem="SPO-16-AwB" firstAttribute="height" secondItem="M2u-w1-eZG" secondAttribute="height" id="nnG-1P-gUW"/>
-                                    <constraint firstItem="RDc-uB-3wf" firstAttribute="trailing" secondItem="1gS-5u-zrW" secondAttribute="trailing" id="uKT-xb-K67"/>
+                                    <constraint firstAttribute="height" constant="100" id="xee-ss-Max"/>
                                 </constraints>
-                            </stackView>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="74" id="f0H-u3-ArN">
+                                        <rect key="frame" x="0.0" y="50" width="273" height="74"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="f0H-u3-ArN" id="kns-Za-5N7">
+                                            <rect key="frame" x="0.0" y="0.0" width="273" height="74"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemMintColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="fks-U1-aLp" secondAttribute="bottom" constant="30" id="1Ac-g6-hZk"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RTo-a9-BhL" secondAttribute="trailing" constant="30" id="5IP-Pg-mZX"/>
-                            <constraint firstItem="PBb-aP-5PX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="Es1-rE-XGU"/>
-                            <constraint firstItem="RTo-a9-BhL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="JE1-Ce-Le5"/>
-                            <constraint firstItem="PBb-aP-5PX" firstAttribute="top" secondItem="RTo-a9-BhL" secondAttribute="bottom" constant="10" id="PTg-Qb-807"/>
-                            <constraint firstItem="RTo-a9-BhL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="k2k-9O-PmG"/>
+                            <constraint firstItem="lty-dz-5hd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="15" id="474-yb-aix"/>
+                            <constraint firstItem="jhV-ku-F36" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7dq-lF-lg9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lty-dz-5hd" secondAttribute="trailing" constant="20" id="DQU-We-kjY"/>
+                            <constraint firstItem="jhV-ku-F36" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="Nhb-My-NcW"/>
+                            <constraint firstItem="jhV-ku-F36" firstAttribute="top" secondItem="lty-dz-5hd" secondAttribute="bottom" constant="20" id="hgl-2u-82t"/>
+                            <constraint firstItem="lty-dz-5hd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="iwo-NF-uVW"/>
                             <constraint firstItem="fks-U1-aLp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kAE-fM-nsj"/>
-                            <constraint firstItem="PBb-aP-5PX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ypi-uy-ONR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jhV-ku-F36" secondAttribute="trailing" constant="60" id="kgK-lA-eqi"/>
+                            <constraint firstItem="lty-dz-5hd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ujb-mj-5Hr"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="od9-OQ-Gjz"/>
                     <connections>
-                        <outlet property="memberProfileImageView1" destination="Qyt-tn-pym" id="mvM-kc-Lgv"/>
-                        <outlet property="memberProfileImageView2" destination="pJq-xc-9Sr" id="4Eg-CM-89v"/>
-                        <outlet property="memberProfileImageView3" destination="lXx-gM-aWx" id="HHQ-1M-vOU"/>
-                        <outlet property="memberProfileImageView4" destination="x3o-xh-JvR" id="c6m-pP-nb5"/>
-                        <outlet property="memberProfileImageView5" destination="GeE-Vb-iF8" id="cBl-6c-WSG"/>
-                        <outlet property="memberProfileImageView6" destination="mpg-Gy-quQ" id="Xcs-nZ-rPi"/>
+                        <outlet property="profileImageView1" destination="Qyt-tn-pym" id="8UP-51-Sbc"/>
+                        <outlet property="profileImageView2" destination="pJq-xc-9Sr" id="6B9-Fa-VUI"/>
+                        <outlet property="profileImageView3" destination="lXx-gM-aWx" id="4gD-3w-HWq"/>
+                        <outlet property="profileImageView4" destination="x3o-xh-JvR" id="FbP-uW-C21"/>
+                        <outlet property="profileImageView5" destination="GeE-Vb-iF8" id="1Aq-ou-yx9"/>
+                        <outlet property="profileImageView6" destination="mpg-Gy-quQ" id="a5L-TE-ghv"/>
+                        <outlet property="teamInfoTableView" destination="jhV-ku-F36" id="6Dr-Nd-4sl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="P0O-td-WlP"/>
             </objects>
-            <point key="canvasLocation" x="-262" y="-27"/>
+            <point key="canvasLocation" x="161" y="-27"/>
         </scene>
     </scenes>
     <resources>
-        <systemColor name="labelColor">
-            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemBrownColor">
-            <color red="0.63529411759999999" green="0.51764705879999995" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemMintColor">
-            <color red="0.0" green="0.78039215689999997" blue="0.74509803919999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemPinkColor">
-            <color red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemPurpleColor">
             <color red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
