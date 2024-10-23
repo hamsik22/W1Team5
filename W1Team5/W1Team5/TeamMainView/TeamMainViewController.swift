@@ -24,19 +24,19 @@ class TeamMainViewController: UIViewController {
     //프로필 이미지 둥글기 값
     private var teamInformationCornerRadius: CGFloat = 15
     
-    @IBOutlet private var profileImageView1: UIImageView!
-    @IBOutlet private var profileImageView2: UIImageView!
-    @IBOutlet private var profileImageView3: UIImageView!
-    @IBOutlet private var profileImageView4: UIImageView!
-    @IBOutlet private var profileImageView5: UIImageView!
-    @IBOutlet private var profileImageView6: UIImageView!
+    @IBOutlet private var profileButton1: UIButton!
+    @IBOutlet private var profileButton2: UIButton!
+    @IBOutlet private var profileButton3: UIButton!
+    @IBOutlet private var profileButton4: UIButton!
+    @IBOutlet private var profileButton5: UIButton!
+    @IBOutlet private var profileButton6: UIButton!
     
-    private var allProfileImageView: [UIImageView] { [profileImageView1,
-                                                      profileImageView2,
-                                                      profileImageView3,
-                                                      profileImageView4,
-                                                      profileImageView5,
-                                                      profileImageView6] }
+    private var profileButtons: [UIButton] { [profileButton1,
+                                                      profileButton2,
+                                                      profileButton3,
+                                                      profileButton4,
+                                                      profileButton5,
+                                                      profileButton6] }
 }
 
 
