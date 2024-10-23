@@ -65,5 +65,8 @@ extension TeamMainViewController {
         self.teamInfoTableView.tableFooterView = UIView(frame: .zero)
         self.teamInfoTableView.sectionHeaderHeight = .zero
         self.teamInfoTableView.sectionFooterHeight = .zero
+        
+        //스크롤 바 끔
+        self.teamInfoTableView.showsVerticalScrollIndicator = false
     }
 }
