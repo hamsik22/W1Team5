@@ -43,6 +43,7 @@ class JaegunViewController: UIViewController {
     }
     
     
+    
     @IBAction func btnBlog(_ sender: UIButton) {
         guard let blogUrl = URL(string: "https://quaker.tistory.com/") else {
             return
