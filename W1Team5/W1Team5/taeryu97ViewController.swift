@@ -62,34 +62,7 @@ class taeryu97ViewController: UIViewController {
         LabelWorkStyle.text = "작업 스타일 : " + WorkStyle.joined()
 
     }
-    
 
-    /*
-    func LabelBlogTapped(gestureRecognizer: UITapGestureRecognizer) {
-        let BlogLabel = URL(string: Blog)!
-        let safariVC = SFSafariViewController(url: BlogLabel)
-        self.present(safariVC, animated: true, completion: nil)
-    }
-    */
-    func imageViewTapped(gestureRecognizer: UITapGestureRecognizer) {
-        
-    }
 
 }
 
-/*
- 현재 막히는것
- 1. 배열로 라벨안에 데이터를 넣었을때에 라벨내의 데이터 띄워쓰기
- ㄴ 안된다면 그냥 String 데이터로 변환후 떄려넣을 예정
- 
- 2. 하단 label 칸마다 밑줄 넣기
- ㄴ 안된다면 패스
- 
- 3. 스크롤뷰 적용 (최우선)
- ㄴ 일단 찾아봤는데 마땅히 정보가 안나오는상황, 안되면 튜터님 찾아갈예정
- 
- 4. 이미지뷰에 이미지 넣기
- 만약 가능하다면 이미지뷰 터치시 이미지 커졌다 줄어들게
- 
- 5. 블로그링크 띄우기
- */
