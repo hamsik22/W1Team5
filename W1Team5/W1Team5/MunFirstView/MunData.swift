@@ -6,7 +6,7 @@
 //
 
 struct MunData {
-    let name: String!
+    let name: String
     let introduce: String
     let mbti: String
     let strengths: [String]
