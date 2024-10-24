@@ -49,38 +49,26 @@ extension MemberButton {
     }
     
     private func setTitleLabel() {
-        self.setTitle(self.name, for: .normal)
-        guard let titleLabel = self.titleLabel else {
-            print("MemberButton: TitleLabel set fail")
-            return
-        }
         
-        titleLabel.textColor = .white
-        titleLabel.backgroundColor = .clear
-        titleLabel.font = UIFont.monospacedSystemFont(ofSize: 17, weight: .ultraLight)
+        self.setTitle(self.name, for: .normal)
+        self.setTitleColor(.black, for: .normal)
+//        self.font
+
+        self.setTitle("프로필 ▷", for: .highlighted)
+        self.setTitleColor(.systemBlue, for: .highlighted)
+        
+        guard let titleLabel = self.titleLabel else { return }
+        
+        
+        titleLabel.font = UIFont.monospacedSystemFont(ofSize: 17, weight: .heavy)
         titleLabel.textAlignment = .center
         
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
         let bottomAnchor = titleLabel.bottomAnchor.constraint(equalTo: self.topAnchor)
+        let centerXAnchor = titleLabel.centerXAnchor.constraint(equalTo: self.centerXAnchor)
         bottomAnchor.isActive = true
+        centerXAnchor.isActive = true
         titleLabel.contentMode = .scaleAspectFit
-        
-        
-        let outLineLabel = UILabel()
-        self.addSubview(outLineLabel)
-
-        outLineLabel.text = self.name
-        outLineLabel.textColor = .black
-        outLineLabel.backgroundColor = .clear
-        outLineLabel.font = UIFont.monospacedSystemFont(ofSize: 17, weight: .black)
-        
-        outLineLabel.textAlignment = .center
-        
-        outLineLabel.translatesAutoresizingMaskIntoConstraints = false
-        let centerXConstraint = outLineLabel.centerXAnchor.constraint(equalTo: titleLabel.centerXAnchor)
-        let centerYConstraint = outLineLabel.centerYAnchor.constraint(equalTo: titleLabel.centerYAnchor)
-
-        NSLayoutConstraint.activate([centerXConstraint,centerYConstraint])
         
     }
     
@@ -96,6 +84,7 @@ extension MemberButton {
             }
         }
         
+        image.withTintColor(.clear)
         let imageView = UIImageView(image: image)
         imageView.contentMode = .scaleAspectFit
         
@@ -103,6 +92,7 @@ extension MemberButton {
         
         imageView.tintColor = .clear
         imageView.contentMode = .scaleAspectFit
+        imageView.backgroundColor = .clear
         
         imageView.translatesAutoresizingMaskIntoConstraints = false
         let topConstraint = imageView.topAnchor.constraint(equalTo: self.topAnchor)

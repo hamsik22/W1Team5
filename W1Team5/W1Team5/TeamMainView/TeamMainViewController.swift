@@ -39,7 +39,7 @@ class TeamMainViewController: UIViewController {
                                               profileButton5,
                                               profileButton6] }
     
-    private var memberProfile: [MemberProfile] = [peatlee, hamsik, jay, mun, ryu, ahn]
+    private var memberProfile: [MemberProfile] = [hamsik, jay, mun, ryu, peatlee, ahn]
 }
 
 
@@ -76,11 +76,12 @@ extension TeamMainViewController {
 
 //MARK: - Member Button
 extension TeamMainViewController {
+    
     private func setUpProfileButtons() {
-        var memberProfile = self.memberProfile.shuffled()
-        self.profileButtons.forEach { profileButton in
-            let profile = memberProfile.removeLast()
-            profileButton.setProfile(profile)
+        
+        for number in 0..<profileButtons.count {
+            let profile = self.memberProfile[number]
+            self.profileButtons[number].setProfile(profile)
         }
     }
 }
