@@ -70,7 +70,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qu8-cI-qXA">
                                                 <rect key="frame" x="0.0" y="0.0" width="176.66666666666666" height="162.66666666666666"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mO3-g6-Kvr" userLabel="Member 1">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mO3-g6-Kvr" userLabel="Member 1" customClass="MemberButton" customModule="W1Team5" customModuleProvider="target">
                                                         <rect key="frame" x="63.333333333333329" y="41.333333333333314" width="50" height="80"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="mO3-g6-Kvr" secondAttribute="height" multiplier="5:8" id="EBy-fA-sXa"/>
@@ -90,7 +90,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uXe-Ab-9kf">
                                                 <rect key="frame" x="176.66666666666663" y="0.0" width="176.33333333333337" height="162.66666666666666"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bjD-wA-Fn6" userLabel="Member 2">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bjD-wA-Fn6" userLabel="Member 2" customClass="MemberButton" customModule="W1Team5" customModuleProvider="target">
                                                         <rect key="frame" x="63.000000000000028" y="41.333333333333314" width="50" height="80"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="Button"/>
@@ -115,7 +115,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ICR-E5-Czh">
                                                 <rect key="frame" x="0.0" y="0.0" width="176.66666666666666" height="162.66666666666666"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6fv-fC-hXi" userLabel="Member 3">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6fv-fC-hXi" userLabel="Member 3" customClass="MemberButton" customModule="W1Team5" customModuleProvider="target">
                                                         <rect key="frame" x="63.333333333333329" y="41.333333333333314" width="50" height="80"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="Button"/>
@@ -130,7 +130,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="616-9i-uNg">
                                                 <rect key="frame" x="176.66666666666663" y="0.0" width="176.33333333333337" height="162.66666666666666"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r7c-rm-L36" userLabel="Member 4">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r7c-rm-L36" userLabel="Member 4" customClass="MemberButton" customModule="W1Team5" customModuleProvider="target">
                                                         <rect key="frame" x="63.000000000000028" y="41.333333333333314" width="50" height="80"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="Button"/>
@@ -150,7 +150,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yhS-r9-hBq">
                                                 <rect key="frame" x="0.0" y="0.0" width="176.66666666666666" height="162.66666666666666"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UFu-1X-XZO" userLabel="Member 5">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UFu-1X-XZO" userLabel="Member 5" customClass="MemberButton" customModule="W1Team5" customModuleProvider="target">
                                                         <rect key="frame" x="63.333333333333329" y="41.333333333333258" width="50" height="80"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="Button"/>
@@ -165,7 +165,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="clO-i9-Q1r">
                                                 <rect key="frame" x="176.66666666666663" y="0.0" width="176.33333333333337" height="162.66666666666666"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5tD-KI-fAw" userLabel="Member 6">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5tD-KI-fAw" userLabel="Member 6" customClass="MemberButton" customModule="W1Team5" customModuleProvider="target">
                                                         <rect key="frame" x="63.000000000000028" y="41.333333333333258" width="50" height="80"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="Button"/>
@@ -217,6 +217,12 @@
                     </view>
                     <navigationItem key="navigationItem" id="od9-OQ-Gjz"/>
                     <connections>
+                        <outlet property="profileButton1" destination="mO3-g6-Kvr" id="fv9-dg-y1G"/>
+                        <outlet property="profileButton2" destination="bjD-wA-Fn6" id="zFG-hj-gBb"/>
+                        <outlet property="profileButton3" destination="6fv-fC-hXi" id="ySF-w8-IRI"/>
+                        <outlet property="profileButton4" destination="r7c-rm-L36" id="I7I-ob-RL6"/>
+                        <outlet property="profileButton5" destination="UFu-1X-XZO" id="WXQ-LM-uie"/>
+                        <outlet property="profileButton6" destination="5tD-KI-fAw" id="j80-fP-z41"/>
                         <outlet property="teamInfoTableView" destination="jhV-ku-F36" id="6Dr-Nd-4sl"/>
                     </connections>
                 </viewController>

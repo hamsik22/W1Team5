@@ -16,6 +16,7 @@ class TeamMainViewController: UIViewController {
         // Do any additional setup after loading the view.
         configureTeamTableView()
         setUpTableView()
+        setUpProfileButtons()
     }
     
     @IBOutlet private var teamInfoTableView: UITableView!
@@ -24,21 +25,22 @@ class TeamMainViewController: UIViewController {
     //프로필 이미지 둥글기 값
     private var teamInformationCornerRadius: CGFloat = 15
     
-    @IBOutlet private var profileButton1: UIButton!
-    @IBOutlet private var profileButton2: UIButton!
-    @IBOutlet private var profileButton3: UIButton!
-    @IBOutlet private var profileButton4: UIButton!
-    @IBOutlet private var profileButton5: UIButton!
-    @IBOutlet private var profileButton6: UIButton!
+    @IBOutlet private var profileButton1: MemberButton!
+    @IBOutlet private var profileButton2: MemberButton!
+    @IBOutlet private var profileButton3: MemberButton!
+    @IBOutlet private var profileButton4: MemberButton!
+    @IBOutlet private var profileButton5: MemberButton!
+    @IBOutlet private var profileButton6: MemberButton!
     
-    private var profileButtons: [UIButton] { [profileButton1,
-                                                      profileButton2,
-                                                      profileButton3,
-                                                      profileButton4,
-                                                      profileButton5,
-                                                      profileButton6] }
+    private var profileButtons: [MemberButton] { [profileButton1,
+                                              profileButton2,
+                                              profileButton3,
+                                              profileButton4,
+                                              profileButton5,
+                                              profileButton6] }
+    
+    private var memberProfile: [MemberProfile] = [peatlee, hamsik, jay, mun, ryu, ahn]
 }
-
 
 
 //MARK: - TableView
@@ -68,5 +70,17 @@ extension TeamMainViewController {
         
         //스크롤 바 끔
         self.teamInfoTableView.showsVerticalScrollIndicator = false
+    }
+}
+
+
+//MARK: - Member Button
+extension TeamMainViewController {
+    private func setUpProfileButtons() {
+        var memberProfile = self.memberProfile.shuffled()
+        self.profileButtons.forEach { profileButton in
+            let profile = memberProfile.removeLast()
+            profileButton.setProfile(profile)
+        }
     }
 }
