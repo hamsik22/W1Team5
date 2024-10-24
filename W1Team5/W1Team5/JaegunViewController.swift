@@ -43,7 +43,7 @@ class JaegunViewController: UIViewController {
     }
     
     
-    
+    //버튼 링크 부분
     @IBAction func btnBlog(_ sender: UIButton) {
         guard let blogUrl = URL(string: "https://quaker.tistory.com/") else {
             return
