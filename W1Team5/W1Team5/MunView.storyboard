@@ -3,6 +3,7 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -99,7 +100,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="CollectionViewCell" reuseIdentifier="cell" id="qja-CV-ca4" customClass="CollectionViewCell" customModule="TeamProject">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="MunPhotoCollectionViewCell" reuseIdentifier="munCell" id="qja-CV-ca4" customClass="MunPhotoCollectionViewCell" customModule="W1Team5" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="131" height="131"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="pnj-17-5jy">
@@ -125,6 +126,7 @@
                                                 <constraint firstItem="Eqb-vv-CyX" firstAttribute="leading" secondItem="pnj-17-5jy" secondAttribute="leading" id="uMH-Qs-LN0"/>
                                             </constraints>
                                         </collectionViewCellContentView>
+                                        <color key="backgroundColor" name="AccentColor"/>
                                         <size key="customSize" width="131" height="131"/>
                                         <connections>
                                             <outlet property="collectionImageView" destination="Eqb-vv-CyX" id="rVd-jl-gsp"/>
@@ -162,6 +164,7 @@
                     <connections>
                         <outlet property="munIntroduce" destination="r5s-QG-BOd" id="oQD-8d-j8r"/>
                         <outlet property="munName" destination="72T-ka-dY8" id="reV-z2-RQ2"/>
+                        <outlet property="munPhotoCollectionView" destination="lCX-f8-sPg" id="XcP-Ec-86e"/>
                         <outlet property="munProfileImage" destination="dnt-BV-vrJ" id="DB2-VY-nw2"/>
                     </connections>
                 </viewController>
@@ -171,6 +174,9 @@
         </scene>
     </scenes>
     <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
