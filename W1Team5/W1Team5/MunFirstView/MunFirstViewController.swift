@@ -74,8 +74,7 @@ extension MunFirstViewController: UICollectionViewDataSource, UICollectionViewDe
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
     
         // photo 배열 길이로 설정
-        let number = munData.photo.count
-        return number
+        return munData.photo.count
     }
     
     // collectionView cell 설정
