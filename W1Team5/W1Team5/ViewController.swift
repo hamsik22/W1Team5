@@ -14,6 +14,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    // TODO: 메인화면과 연결해야함
     @IBAction func hamsikButtonTapped(_ sender: UIButton) {
         
         print("Hamsik Button tapped")

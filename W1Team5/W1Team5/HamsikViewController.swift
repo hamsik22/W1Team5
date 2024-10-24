@@ -85,6 +85,7 @@ class HamsikViewController: UIViewController, UITableViewDelegate, UITableViewDa
         return cell
     }
     
+    /// safafri 웹을 표시하는 함수
     @IBAction func goBlogButtonTapped(_ sender: Any) {
         guard let blogUrl = URL(string: hamsikInfo.blogURL) else { return  }
         let blogSafariView: SFSafariViewController = SFSafariViewController(url: blogUrl)
