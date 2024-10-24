@@ -44,7 +44,7 @@ extension MemberButton {
     
     private func setButton() {
         self.contentMode = .scaleAspectFit
-        self.backgroundColor = .white
+        self.backgroundColor = .clear
         self.tintColor = .clear
     }
     

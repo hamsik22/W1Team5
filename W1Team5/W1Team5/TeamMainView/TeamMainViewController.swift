@@ -56,6 +56,8 @@ extension TeamMainViewController {
     private func setUpTableView() {
         self.teamInfoTableView.backgroundColor = .clear
         
+        self.teamInfoTableView.separatorStyle = .none
+        
         // 테이블 뷰 둥글기 조절
         self.teamInfoTableView.clipsToBounds = true
         self.teamInfoTableView.layer.cornerRadius = 20
