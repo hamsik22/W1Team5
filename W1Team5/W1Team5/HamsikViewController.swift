@@ -93,15 +93,4 @@ class HamsikViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
 }
 
-// MARK: 회의에서 정한 데이터 구조
-struct HamsikInfo {
-    let name: String
-    let description: String
-    let mbti: String
-    let strengths: [String]
-    let style: [String]
-    let cooperation: [String]
-    let blogURL: String
-    let profileImage: String
-    let zepImage: String
-}
+
