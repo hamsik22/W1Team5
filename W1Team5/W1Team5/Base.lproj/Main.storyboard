@@ -1061,11 +1061,11 @@
             </objects>
             <point key="canvasLocation" x="4823" y="-453"/>
         </scene>
-        <!--Peatlee Team Member View Controller-->
+        <!--Peatlee View Controller-->
         <scene sceneID="IFQ-ik-wwB">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VGG-CE-dgc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <viewController id="x02-Bx-k0B" customClass="PeatleeTeamMemberViewController" customModule="W1Team5" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="x02-Bx-k0B" customClass="PeatleeViewController" customModule="W1Team5" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dQX-oo-xpp">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
