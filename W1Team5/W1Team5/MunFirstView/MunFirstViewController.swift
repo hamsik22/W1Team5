@@ -53,7 +53,6 @@ class MunFirstViewController: UIViewController {
     
     
     // 블로그 버튼 클릭시 링크 이동
-    
     @IBAction func clickBlogButton(_ sender: Any) {
         guard let blogURL = URL(string: munData.blogURL) else { return }
         let blogSafariView: SFSafariViewController = SFSafariViewController(url: blogURL)
@@ -89,5 +88,20 @@ extension MunFirstViewController: UICollectionViewDataSource, UICollectionViewDe
         return cell
     }
     
-    
+    // collectionView 클릭시 MunDetailViewController 화면으로 이동하는 함수
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        // MunView 스토리보드에 있는 MunDetailViewController의 데이터를 가져와서 vc 생성
+        let vc = UIStoryboard(name: "MunView", bundle: nil).instantiateViewController(withIdentifier: "MunDetailViewController") as! MunDetailViewController
+        
+        // MunDetailViewController에 전해줄 값 저장
+        vc.prepareUserName = munData.name
+        vc.prepareUserProfileImage = munData.profileImage
+        vc.preparePostImage = munData.photo[indexPath.row]
+        vc.preparePostContent = munData.content[indexPath.row]
+        vc.preparePostUploadDate = munData.time[indexPath.row]
+        
+        //  vc로 네비게이션 이동
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
 }
