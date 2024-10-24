@@ -55,15 +55,15 @@ class MunFirstViewController: UIViewController {
     // 블로그 버튼 클릭시 링크 이동
     
     @IBAction func clickBlogButton(_ sender: Any) {
-        let blogURL = NSURL(string:"https://name-mun.tistory.com")
-        let blogSafariView: SFSafariViewController = SFSafariViewController(url: blogURL as! URL)
+        guard let blogURL = URL(string: munData.blogURL) else { return }
+        let blogSafariView: SFSafariViewController = SFSafariViewController(url: blogURL)
         self.present(blogSafariView, animated: true, completion: nil)
     }
     
     // 블로그 버튼 클릭시 링크 이동
     @IBAction func clickGithubButton(_ sender: Any) {
-        let githubURL = NSURL(string:"https://github.com/name-mun")
-        let githubSafariView: SFSafariViewController = SFSafariViewController(url: githubURL as! URL)
+        guard let githubURL = URL(string: munData.githubURL) else { return }
+        let githubSafariView: SFSafariViewController = SFSafariViewController(url: githubURL)
         self.present(githubSafariView, animated: true, completion: nil)
     }
 
