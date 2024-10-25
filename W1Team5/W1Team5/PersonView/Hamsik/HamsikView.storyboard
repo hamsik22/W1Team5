@@ -201,6 +201,7 @@
                             <constraint firstItem="sUp-1A-daC" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="pYw-QN-Hwl"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="2NZ-Nv-k4Y"/>
                     <connections>
                         <outlet property="cooperationTableView" destination="HnJ-qe-Nbc" id="4F4-BI-m1P"/>
                         <outlet property="goBlogButton" destination="vXo-pe-HUl" id="tnU-4Y-qJ6"/>
@@ -214,7 +215,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="60.305343511450381" y="-34.507042253521128"/>
+            <point key="canvasLocation" x="57" y="-302"/>
         </scene>
     </scenes>
     <resources>

@@ -26,7 +26,7 @@ class TeamInfoTableViewCell: UITableViewCell {
     
     override func prepareForReuse() {
         super.prepareForReuse()
-        //
+        
         self.clearView()
     }
     
