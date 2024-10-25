@@ -9,9 +9,6 @@ struct MunData {
     let name: String
     let introduce: String
     let mbti: String
-    let strengths: [String]
-    let style: [String]
-    let cooperation: [String]
     let blogURL: String
     let githubURL: String
     let profileImage: String
