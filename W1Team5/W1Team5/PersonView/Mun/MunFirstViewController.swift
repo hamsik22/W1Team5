@@ -24,7 +24,7 @@ class MunFirstViewController: UIViewController {
                                    githubURL: "https://github.com/name-mun",
                                    profileImage: "SMGEPF",
                                    photo: ["collectionPhoto1", "collectionPhoto2","collectionPhoto3","collectionPhoto4","collectionPhoto5","collectionPhoto6","collectionPhoto7","collectionPhoto8","collectionPhoto9","collectionPhoto10"],
-                                   content: ["파리 방브마켓에서 찍은 사진입니다!", "몽마르뜨 언덕은 예술가로 넘쳐나요", "파리에서 많은 사진을 찍었어요", "저는 스냅사진도 찍었어요","굿!","6","7","8","9","10"],
+                                   content: ["저는 창업 관련 대회 수상이 많습니다!", "저는 좋은 소통에 관심이 많아요", "도전하는 삶을 좋아합니다! 최근...", "저는 깔끔하고 정돈된 환경을 좋아...","깊은 관계를 선호합니다","대화를 잘 하기 위해 노력해요","저는 정한 규칙을 잘 따릅니다","맡은 일은 확실하게! 책임감을...","피드백을 주면 바로 적용합니다!","잘 부탁드립니다"],
                                    time: ["OCTOBER 23","OCTOBER 22","OCTOBER 21","OCTOBER 20","OCTOBER 20","OCTOBER 19","OCTOBER 18","OCTOBER 17","OCTOBER 17","OCTOBER 17"])
     
     let layout = UICollectionViewFlowLayout()

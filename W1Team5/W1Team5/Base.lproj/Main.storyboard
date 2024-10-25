@@ -443,7 +443,6 @@
         <!--Hamsik View Controller-->
         <scene sceneID="HZF-zX-Jck">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="d8w-lh-Cxx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="HamsikViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="qLy-5r-pc0" customClass="HamsikViewController" customModule="W1Team5" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vLg-LC-K20">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
@@ -646,13 +645,13 @@
                         <outlet property="styleTableView" destination="kKZ-Ev-XRd" id="3RS-Pe-keb"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d8w-lh-Cxx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1888" y="-755"/>
         </scene>
         <!--Mun First View Controller-->
         <scene sceneID="bLH-xG-e8T">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hDG-7v-Ovh" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="MunFirstViewController" id="eh3-RL-4iO" customClass="MunFirstViewController" customModule="W1Team5" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9Qx-vJ-Cld">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
@@ -808,13 +807,13 @@
                         <outlet property="munProfileImage" destination="sMt-8A-gek" id="uDI-Mz-olb"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hDG-7v-Ovh" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1888" y="94"/>
         </scene>
         <!--Jaegun View Controller-->
         <scene sceneID="BsB-4e-pyb">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tbc-nP-kPI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="iMl-UA-Zfe" customClass="JaegunViewController" customModule="W1Team5" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DZq-LT-kyi">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
@@ -963,14 +962,13 @@
                         <outlet property="nameLabel" destination="Yzr-9M-cTR" id="koK-4E-C6E"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tbc-nP-kPI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3088" y="-756"/>
         </scene>
         <!--Taeryu97 View Controller-->
         <scene sceneID="XZs-U7-bfE">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="bpI-7w-sQC" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="zjq-Lp-dUX"/>
                 <viewController id="h24-yv-9rI" customClass="taeryu97ViewController" customModule="W1Team5" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="H4o-6D-8Qb">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
@@ -1050,21 +1048,14 @@
                         <outlet property="textView" destination="yMT-5i-ljd" id="2PX-9m-bfd"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bpI-7w-sQC" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="zjq-Lp-dUX"/>
             </objects>
             <point key="canvasLocation" x="3088" y="94"/>
-        </scene>
-        <!--Storyboard Reference-->
-        <scene sceneID="omD-9g-BKL">
-            <objects>
-                <viewControllerPlaceholder id="h4t-BD-fjs" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="M4D-ad-F7S" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4823" y="-453"/>
         </scene>
         <!--Peatlee View Controller-->
         <scene sceneID="IFQ-ik-wwB">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="VGG-CE-dgc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="x02-Bx-k0B" customClass="PeatleeViewController" customModule="W1Team5" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dQX-oo-xpp">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
@@ -1327,6 +1318,7 @@
                         <outlet property="profileStackView" destination="FZm-RJ-3Jl" id="b1U-hl-Wjd"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VGG-CE-dgc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1887.7862595419847" y="936.61971830985919"/>
         </scene>
